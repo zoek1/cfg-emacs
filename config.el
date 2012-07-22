@@ -38,11 +38,21 @@ Habilita la tecla backspace."
   (require 'hardcore-mode)
   (global-hardcore-mode))
 
+
+(defun config-zenburn ()
+  "Establecer el tema de zenburn por defecto."
+  (interactive)
+  (load-file
+   (concat 
+    (cadr (split-string (pwd))) "cfg-emacs/zenburn-emacs/zenburn-theme.el"))
+  (load-theme 'zenburn t))
+
 (setq config-function-list (list #'config-autopair
 				  #'config-fci
 				  #'config-yasnippet
 				  #'config-powerline
-				  #'config-hardcore))
+				  #'config-hardcore
+				  #'config-zenburn))
 
 (let ((defaul-load-directory (pwd)))
       (normal-top-level-add-subdirs-to-load-path)
@@ -56,7 +66,7 @@ Habilita la tecla backspace."
 (column-number-mode)
 
 ;; Deshabilita la pantalla de bienvenida o splash screen de emacs
-(setq inhibit-splash-screen t)
+(setq-default inhibit-splash-screen t)
 
 (global-set-key (kbd "C-c y") '(lambda () 
 				 (interactive)
