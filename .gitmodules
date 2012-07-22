@@ -1,0 +1,18 @@
+[submodule "autopair"]
+	path = autopair
+	url = https://github.com/capitaomorte/autopair.git
+[submodule "yasnippet"]
+	path = yasnippet
+	url = https://github.com/capitaomorte/yasnippet.git
+[submodule "hardcore-mode.el"]
+	path = hardcore-mode.el
+	url = https://github.com/magnars/hardcore-mode.el.git
+[submodule "emacs-powerline"]
+	path = emacs-powerline
+	url = https://github.com/jonathanchu/emacs-powerline.git
+[submodule "Fill-Column-Indicator"]
+	path = Fill-Column-Indicator
+	url = https://github.com/alpaker/Fill-Column-Indicator.git
+[submodule "auto-complete"]
+	path = auto-complete
+	url = https://github.com/m2ym/auto-complete.git
